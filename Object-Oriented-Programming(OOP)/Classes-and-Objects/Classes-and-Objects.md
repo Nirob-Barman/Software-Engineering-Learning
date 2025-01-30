@@ -70,3 +70,23 @@ int main() {
 ```
 ## ব্যাখ্যা:
 `Car` ক্লাসের মাধ্যমে আমরা দুটি অবজেক্ট (`car1` এবং `car2`) তৈরি করেছি। আমরা সরাসরি `main()` ফাংশনে এই অবজেক্টগুলোর অ্যাট্রিবিউটের মান সেট করেছি।
+
+
+`car1.name = "Toyota";`  
+`car1.model = "Corolla";`  
+
+এইভাবে, আমরা `car1` অবজেক্টের নাম এবং মডেল অ্যাট্রিবিউটের মান নির্ধারণ করেছি।  
+
+একইভাবে, `car2` অবজেক্টের অ্যাট্রিবিউট সেট করা হয়েছে:  
+`car2.name = "Honda";`  
+`car2.model = "Civic";`  
+
+এখানে `start()` এবং `display()` মেথডগুলো প্রত্যেকটি অবজেক্টের অ্যাট্রিবিউট ব্যবহার করে কাজ করছে।
+
+### আউটপুট:
+```plaintext
+Toyota Corolla car is starting.
+Car Name: Toyota, Model: Corolla
+Honda Civic car is starting.
+Car Name: Honda, Model: Civic
+```
