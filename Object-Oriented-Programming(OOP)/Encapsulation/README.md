@@ -85,44 +85,10 @@ int main() {
 
 এইভাবে, নীরব এনক্যাপসুলেশনের মাধ্যমে প্রোগ্রামিংয়ের একটি গুরুত্বপূর্ণ ধারণা শিখল এবং তার কোডিং দক্ষতা আরও উন্নত হলো।
 
-## C++ কোড উদাহরণ:
 
-```cpp
-#include <iostream>
-using namespace std;
+#### ডেটা সুরক্ষায় এনক্যাপসুলেশনের ভূমিকা
+1. **Private Data Members:** ব্যালেন্স ভ্যারিয়েবলটি **private** হিসেবে ডিফাইন করা হয়েছে। এর মানে হলো, বাইরের কোনো কোড সরাসরি ব্যালেন্স অ্যাক্সেস করতে পারবে না। শুধুমাত্র ক্লাসের অভ্যন্তরীণ মেথডগুলি এটি পরিবর্তন বা অ্যাক্সেস করতে পারবে।
+2. **Public Member Functions:** আমাদের কোডে **deposit, withdraw** এবং **getBalance** ফাংশনগুলি **public** হিসেবে ডিফাইন করা হয়েছে। এসব ফাংশন ব্যবহার করে আমরা গ্রাহকের ব্যালেন্স পরিবর্তন বা দেখতে পারি। এটি এনক্যাপসুলেশনের মূল ধারণা, যেখানে বাইরের কোড শুধুমাত্র নির্দিষ্ট মেথড ব্যবহার করতে পারে, কিন্তু ডেটার সরাসরি অ্যাক্সেস বন্ধ থাকে।
 
-class Calculator {
-public:
-    // Method for adding integers
-    int add(int a, int b) {
-        return a + b;
-    }
-    
-    // Method for adding doubles
-    float add(float a, float b) {
-        return a + b;
-    }
-
-    // Method for adding mixed types (integer and float)
-    float add(int a, float b) {
-        return a + b;
-    }
-};
-
-int main() {
-    Calculator calc;
-
-    // Demonstrating the three different types of addition
-    cout << "Integer sum: " << calc.add(5, 10) << endl;       // Integer addition
-    cout << "Decimal sum: " << calc.add(5.5, 10.5) << endl;  Floating point number addition
-    cout << "Mixed sum (integer + decimal): " << calc.add(5, 10.5) << endl; // Mixed addition
-
-    return 0;
-}
-```
-## আউটপুট:
-```
-Integer sum: 15
-Decimal sum: 16
-Mixed sum (integer + decimal): 15.5
-```
+#### এনক্যাপসুলেশনের মূল লক্ষ্য:
+এনক্যাপসুলেশনের মূল লক্ষ্য হলো ডেটা সুরক্ষা এবং প্রাইভেসি রক্ষা করা। সুতরাং, **কোনো ধরনের ডেটা সদস্যকে public করা উচিত নয়**, কারণ এতে ডেটা সরাসরি পরিবর্তন করা সম্ভব হয়ে পড়ে, যা সুরক্ষিত নয়। তবে, **public** মেথড রাখা যেতে পারে, যা শুধুমাত্র নির্দিষ্ট নিয়ম মেনে ডেটার সঙ্গে কাজ করে।
