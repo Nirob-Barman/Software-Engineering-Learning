@@ -15,3 +15,46 @@
 3. **মিক্সড সংখ্যার যোগ**: যখন একটি পূর্ণসংখ্যা(integer) এবং একটি দশমিক সংখ্যা(floating point number) যোগ করা হয়, তখন `add(int a, float b)` ফাংশন কাজ করত।
 
 এই পলিমরফিজমের কারণে, একটাই `add()` নামের ফাংশন দিয়ে তিনটি ভিন্ন ধরণের যোগফল বের করা সম্ভব হয়েছিল।
+
+### C++ কোড উদাহরণ:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Calculator {
+public:
+    // Method for adding integers
+    int add(int a, int b) {
+        return a + b;
+    }
+    
+    // Method for adding floating point numbers
+    float add(float a, float b) {
+        return a + b;
+    }
+
+    // Method for adding mixed types (integer and float)
+    float add(int a, float b) {
+        return a + b;
+    }
+};
+
+int main() {
+    Calculator calc;
+
+    // Demonstrating the three different types of addition
+    cout << "Integer sum: " << calc.add(5, 10) << endl;       // Integer addition
+    cout << "Decimal sum: " << calc.add(5.5, 10.5) << endl;  // Floating point number addition
+    cout << "Mixed sum (integer + decimal): " << calc.add(5, 10.5) << endl; // Mixed addition
+
+    return 0;
+}
+```
+### আউটপুট:
+
+```
+Integer sum: 15
+Decimal sum: 16
+Mixed sum (integer + decimal): 15.5
+```
