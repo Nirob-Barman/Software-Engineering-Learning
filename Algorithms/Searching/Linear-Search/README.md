@@ -9,3 +9,40 @@
 
 নীরব তখন খুব আনন্দিত হল এবং শিক্ষককে বললো, "তাহলে আমি এই কাজটা C কোডে কীভাবে লিখব?"
 শিক্ষক তাকে বুঝিয়ে বললেন, "তুমি এমনভাবে কোড লিখবে, যেন তুমি লিস্টের প্রতিটি উপাদান একে একে চেক করতে পারো। নিচে আমি কোডটি দেখাচ্ছি:"
+
+## C Code (Linear Search):
+
+```cpp
+#include <stdio.h>
+
+int linearSearch(int arr[], int size, int key) {
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == key) {
+            return i;  // Found the element, return its index
+        }
+    }
+    return -1;  // Element not found
+}
+
+int main() {
+    int arr[] = {12, 34, 56, 78, 90};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int key = 56;
+
+    int result = linearSearch(arr, size, key);
+
+    if (result != -1) {
+        printf("Element found at index: %d\n", result);
+    } else {
+        printf("Element not found in the array.\n");
+    }
+
+    return 0;
+}
+```
+
+নীরব কোডটা পড়লো এবং বুঝলো কীভাবে লিনিয়ার সার্চ কাজ করে। কোডের মধ্যে, **linearSearch** ফাংশনটি একটি লিস্ট (অ্যারে) এবং একটা কী (যা সে খুঁজছে) নেয় এবং তারপর লিস্টের প্রতিটি উপাদান পরীক্ষা করে। যদি কাঙ্খিত উপাদানটি পায়, তাহলে তার ইনডেক্স রিটার্ন করে। আর যদি না পায়, তাহলে -1 রিটার্ন করে।
+
+নীরব খুব খুশি হয়ে গেল। সে তার শিক্ষককে ধন্যবাদ জানালো এবং মনে মনে বললো, "এই কোডটা দিয়ে আমি আরেকটা সমস্যা সমাধান করার জন্যও ব্যবহার করতে পারব!"
+
+এভাবে নীরব **Linear Search** পদ্ধতি শিখলো এবং কোডিংয়ের নতুন দিগন্তে পা রাখলো।
