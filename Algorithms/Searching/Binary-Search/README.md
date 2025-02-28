@@ -9,3 +9,49 @@
 নীরব খুব আগ্রহী হয়ে বলল, "তাহলে আমি এই পদ্ধতি C কোডে কীভাবে লিখব?"
 
 শিক্ষক হেসে বললেন, "তুমি Binary Search পদ্ধতিটি এমনভাবে কোডে লিখবে, যেন তুমি লিস্টের মাঝখানের উপাদান চেক করতে পারো এবং উপাদানটি বড় না ছোট তার উপর ভিত্তি করে উপযুক্ত ভাগে যেতে পারো। নিচে কোডটি দেখো:"
+
+## C Code (Binary Search):
+
+```cpp
+#include <stdio.h>
+
+int binarySearch(int arr[], int size, int key) {
+    int left = 0, right = size - 1;
+    
+    while (left <= right) {
+        int mid = left + (right - left) / 2;  // Find the middle index
+        
+        // Check if key is present at mid
+        if (arr[mid] == key) {
+            return mid;  // Element found at index mid
+        }
+        
+        // If key is smaller, ignore the right half
+        if (arr[mid] > key) {
+            right = mid - 1;
+        }
+        // If key is larger, ignore the left half
+        else {
+            left = mid + 1;
+        }
+    }
+    
+    return -1;  // Element not found
+}
+
+int main() {
+    int arr[] = {12, 23, 34, 45, 56, 78, 90};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int key = 56;
+    
+    int result = binarySearch(arr, size, key);
+    
+    if (result != -1) {
+        printf("Element found at index: %d\n", result);
+    } else {
+        printf("Element not found in the array.\n");
+    }
+    
+    return 0;
+}
+```
