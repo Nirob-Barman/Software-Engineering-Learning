@@ -9,3 +9,56 @@
 নীরব আরও জানতে চাইল, "তাহলে এটা কীভাবে কোডে লিখবো?"
 
 শিক্ষক হেসে বললেন, "তুমি Ternary Search-এ তিনটি ভাগের মধ্যে খোঁজ করবে এবং সেটি কোডে এমনভাবে লিখবে যেন তুমি লিস্টের মধ্যবর্তী দুইটি উপাদান চেক করতে পারো। নিচে কোডটি দেখো:"
+
+### C Code (Ternary Search):
+
+```cpp
+#include <stdio.h>
+
+int ternarySearch(int arr[], int left, int right, int key) {
+    while (right >= left) {
+        // Divide the array into three parts
+        int mid1 = left + (right - left) / 3;
+        int mid2 = right - (right - left) / 3;
+
+        // Check if key is present at mid1 or mid2
+        if (arr[mid1] == key) {
+            return mid1;
+        }
+        if (arr[mid2] == key) {
+            return mid2;
+        }
+
+        // If key is smaller, search in the left third
+        if (key < arr[mid1]) {
+            right = mid1 - 1;
+        }
+        // If key is greater, search in the right third
+        else if (key > arr[mid2]) {
+            left = mid2 + 1;
+        }
+        // Otherwise, search in the middle third
+        else {
+            left = mid1 + 1;
+            right = mid2 - 1;
+        }
+    }
+    return -1;  // Element not found
+}
+
+int main() {
+    int arr[] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int key = 50;
+    
+    int result = ternarySearch(arr, 0, size - 1, key);
+    
+    if (result != -1) {
+        printf("Element found at index: %d\n", result);
+    } else {
+        printf("Element not found in the array.\n");
+    }
+    
+    return 0;
+}
+```
