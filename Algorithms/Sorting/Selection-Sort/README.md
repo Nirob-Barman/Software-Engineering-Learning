@@ -3,3 +3,52 @@
 একদিন নীরব তার শিক্ষককে আবার প্রশ্ন করলো, "স্যার, যদি আমাকে একটি বড় লিস্ট দেওয়া হয় এবং আমি চাই যে, সেই লিস্টটি সঠিক ক্রমে অন্য উপায়ে সাজাতে, তাহলে আমি কীভাবে অন্য উপায়ে সাজাতে পারব? আর কি কোনো নতুন পদ্ধতি আছে?"
 
 শিক্ষক হাসি দিয়ে বললেন, "অবশ্যই! তুমি এখন যে পদ্ধতির কথা শুনবে, তার নাম Selection Sort। এই পদ্ধতিতে, আমরা লিস্টের মধ্যে সবচেয়ে ছোট (অথবা সবচেয়ে বড়) উপাদান খুঁজে সিলেক্ট করি এবং সেটিকে প্রথমে নিয়ে আসি। এরপর বাকি এলিমেন্টগুলির জন্য একই কাজ করি, এবং এভাবে পুরো লিস্টটি সাজানো হয়ে যায়।"
+
+নীরব আরও জানতে চাইলো, "তাহলে আমি কীভাবে Selection Sort এর প্রোগ্রাম C তে লিখব?"
+শিক্ষক তাকে C কোড দেখালেন, যা Selection Sort অ্যালগরিদম ব্যবহার করে:
+
+### C Code (Selection Sort):
+```cpp
+#include <stdio.h>
+
+// Selection Sort function to sort the array
+void selectionSort(int arr[], int size) {
+    for (int i = 0; i < size - 1; i++) {
+        int minIndex = i;  // Assume the current element is the smallest
+
+        // Find the smallest element in the remaining unsorted array
+        for (int j = i + 1; j < size; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;  // Update the index of the smallest element
+            }
+        }
+
+        // Swap the found smallest element with its proper position
+        if (minIndex != i) {
+            int temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
+    }
+}
+
+int main() {
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original array: \n");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    selectionSort(arr, size);
+
+    printf("\nSorted array: \n");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
