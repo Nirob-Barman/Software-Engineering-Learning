@@ -3,3 +3,45 @@
 একদিন নীরব তার শিক্ষককে আবার প্রশ্ন করলো, "স্যার, আমি এখন পর্যন্ত Bubble Sort এবং Selection Sort শিখেছি। তবে, কি আর কোনো সর্টিং পদ্ধতি আছে যা দিয়ে আমি একটি লিস্ট সাজাতে পারব?"
 
 শিক্ষক হেসে বললেন, "অবশ্যই! তোমাকে আজ যে পদ্ধতি শেখাবো তার নাম Insertion Sort। Insertion Sort এর মূল ধারণা হলো, আমরা একটি একটি করে উপাদান নিয়ে তাকে তার সঠিক স্থানে বসাই। এটি যেন তাসের কার্ড সাজানোর মতো কাজ করে। প্রথমে আমরা প্রথম উপাদানটিকে সর্টেড ধরে নেই। তারপর প্রতিটি নতুন উপাদানকে সর্টেড অংশের মধ্যে সঠিক স্থানে বসাই এবং ধীরে ধীরে পুরো লিস্টটি সাজানো হয়।"
+
+## C Code (Insertion Sort):
+```
+#include <stdio.h>
+
+// Insertion Sort function to sort the array
+void insertionSort(int arr[], int size) {
+    for (int i = 1; i < size; i++) {
+        int key = arr[i];  // Take the current element to be inserted
+        int j = i - 1;
+
+        // Move elements of arr[0..i-1] that are greater than key, one position ahead
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        
+        // Insert the key at its correct position
+        arr[j + 1] = key;
+    }
+}
+
+int main() {
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original array: \n");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    insertionSort(arr, size);
+
+    printf("\nSorted array: \n");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
