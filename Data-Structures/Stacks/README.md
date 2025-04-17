@@ -21,3 +21,17 @@
 * **topElement()** → বর্তমান টপ উপাদান রিটার্ন করে
 * **isEmpty()** → স্ট্যাক খালি কিনা তা যাচাই করে
 * **size()** → স্ট্যাকের বর্তমান সাইজ জানায়
+
+### (a) Push Operation
+
+স্ট্যাকে নতুন উপাদান যোগ করার জন্য Push অপারেশন ব্যবহার করা হয়। উপাদানটি সবসময় স্ট্যাকের উপরে যোগ হয়।
+```
+void push(int stack[], int x, int n) { 
+    if (top == n - 1) { // Check if the stack is full
+        cout << "Stack is full. Overflow condition!" << endl;
+    } else {
+        top = top + 1; // Increment the top position
+        stack[top] = x; // Insert the element at the top
+    }
+}
+```
