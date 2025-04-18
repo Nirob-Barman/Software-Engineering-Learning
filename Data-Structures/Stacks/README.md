@@ -35,3 +35,16 @@ void push(int stack[], int x, int n) {
     }
 }
 ```
+
+### (b) Pop Operation
+
+স্ট্যাকের উপরের উপাদানটি রিমুভ করার জন্য Pop অপারেশন ব্যবহার করা হয়।
+```
+void pop() {
+    if (isEmpty()) {
+        cout << "Stack is empty. Underflow condition!" << endl;
+    } else {
+        top = top - 1; // Decrement the top position
+    }
+}
+```
