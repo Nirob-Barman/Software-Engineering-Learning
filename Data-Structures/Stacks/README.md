@@ -48,3 +48,11 @@ void pop() {
     }
 }
 ```
+
+### (c) Top Element
+স্ট্যাকের উপরের উপাদানটি অ্যাক্সেস করার জন্য ব্যবহৃত হয়।
+```
+int topElement(int stack[]) {
+    return stack[top];
+}
+```
