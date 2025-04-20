@@ -56,3 +56,11 @@ int topElement(int stack[]) {
     return stack[top];
 }
 ```
+
+### d) isEmpty
+স্ট্যাকটি খালি কিনা তা চেক করার জন্য ব্যবহৃত হয়।
+```
+bool isEmpty() {
+    return top == -1;
+}
+```
