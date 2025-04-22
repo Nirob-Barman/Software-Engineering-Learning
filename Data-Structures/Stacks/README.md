@@ -72,3 +72,64 @@ int size() {
     return top + 1;
 }
 ```
+
+## 3. Stack Implementation in C (C ল্যাংগুয়েজে স্ট্যাক ইমপ্লিমেন্টেশন)
+```
+#include <iostream>
+using namespace std;
+
+int top = -1; // শুরুতে স্ট্যাক খালি
+
+void push(int stack[], int x, int n) {
+    if (top == n - 1) {
+        cout << "Stack is full. Overflow condition!" << endl;
+    } else {
+        top = top + 1;
+        stack[top] = x;
+    }
+}
+
+bool isEmpty() {
+    return top == -1;
+}
+
+void pop() {
+    if (isEmpty()) {
+        cout << "Stack is empty. Underflow condition!" << endl;
+    } else {
+        top = top - 1;
+    }
+}
+
+int size() {
+    return top + 1;
+}
+
+int topElement(int stack[]) {
+    return stack[top];
+}
+
+int main() {
+    int stack[3];
+
+    push(stack, 100, 3);
+    cout << "Current size of stack is " << size() << endl;
+
+    push(stack, 200, 3);
+    push(stack, 300, 3);
+    cout << "Current size of stack is " << size() << endl;
+
+    push(stack, 400, 3); // Overflow
+
+    cout << "Top element: " << topElement(stack) << endl;
+
+    for (int i = 0; i < 3; i++) {
+        pop();
+    }
+    cout << "Current size of stack is " << size() << endl;
+
+    pop(); // Underflow
+
+    return 0;
+}
+```
