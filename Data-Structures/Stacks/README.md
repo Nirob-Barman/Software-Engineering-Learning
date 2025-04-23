@@ -133,3 +133,13 @@ int main() {
     return 0;
 }
 ```
+
+## 4. Output
+```
+Current size of stack is 1
+Current size of stack is 3
+Stack is full. Overflow condition!
+Top element: 300
+Current size of stack is 0
+Stack is empty. Underflow condition!
+```
