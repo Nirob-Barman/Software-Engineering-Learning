@@ -146,3 +146,52 @@ Stack is empty. Underflow condition!
 
 ## 5. স্ট্যাকের অ্যাপ্লিকেশন — ব্র্যাকেট ব্যালেন্স চেক
 একটি স্ট্রিং-এর প্রথম এবং শেষ বন্ধনী সঠিকভাবে ব্যালেন্সড কিনা তা চেক করতে স্ট্যাক ব্যবহার করা যায়। 
+
+```
+#include <iostream>
+using namespace std;
+
+int top;
+
+void check(char str[], int n, char stack[]) {
+    for (int i = 0; i < n; i++) {
+        if (str[i] == '(') {
+            top = top + 1;
+            stack[top] = '(';
+        }
+        if (str[i] == ')') {
+            if (top == -1) {
+                top = top - 1;
+                break;
+            } else {
+                top = top - 1;
+            }
+        }
+    }
+
+    if (top == -1)
+        cout << "String is balanced!" << endl;
+    else
+        cout << "String is unbalanced!" << endl;
+}
+
+int main() {
+    char str[] = { '(', 'x', '+', '(', 'y', '-', 'z', ')', ')' };
+    char str1[] = { '(', '(', 'x', '+', 'y' };
+    char stack[15];
+
+    top = -1;
+    check(str, 9, stack);
+
+    top = -1;
+    check(str1, 5, stack);
+
+    return 0;
+}
+```
+
+## 6. Output
+```
+String is balanced!
+String is unbalanced!
+```
