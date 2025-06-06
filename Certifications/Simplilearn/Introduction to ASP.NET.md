@@ -5,7 +5,7 @@ I completed the *Introduction to ASP.NET* course from Simplilearn.
 [Introduction to ASP.NET](https://simpli-web.app.link/e/gg9W5kQzVTb)
 
 **Issued by**: Simplilearn  
-**Date**: June 2025
+**Date**: April 2025
 
 <!-- [![View File](https://yourdomain.com/preview-image.png)](https://simpli-web.app.link/e/gg9W5kQzVTb) -->
 
