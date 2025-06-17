@@ -28,3 +28,29 @@ Queue হলো এমন একটি ডেটা স্ট্রাকচা�
 - frontElement() → সামনে থাকা উপাদান দেখা
 - isEmpty() → কিউ খালি কিনা চেক করা
 - size() → কিউ-এর বর্তমান সাইজ নির্ণয় করা।
+
+### (a) Enqueue Operation
+
+```
+void enqueue(int queue[], int x, int n) {
+    if (rear == n - 1) {
+        printf("Queue is full. Overflow!\n");
+    } else {
+        if (front == -1) front = 0;
+        rear++;
+        queue[rear] = x;
+    }
+}
+```
+
+### (b) Dequeue Operation
+
+```
+void dequeue() {
+    if (front == -1 || front > rear) {
+        printf("Queue is empty. Underflow!\n");
+    } else {
+        front++;
+    }
+}
+```
