@@ -54,3 +54,26 @@ void dequeue() {
     }
 }
 ```
+
+
+### (c) Front Element
+```
+int frontElement(int queue[]) {
+    return queue[front];
+}
+```
+
+### (d) isEmpty
+```
+int isEmpty() {
+    return front == -1 || front > rear;
+}
+```
+
+### (e) size
+```
+int size() {
+    if (isEmpty()) return 0;
+    return rear - front + 1;
+}
+```
