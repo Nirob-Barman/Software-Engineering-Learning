@@ -77,3 +77,62 @@ int size() {
     return rear - front + 1;
 }
 ```
+
+## 3. Queue Implementation in C
+
+```
+#include <stdio.h>
+
+#define SIZE 5
+int queue[SIZE];
+int front = -1, rear = -1;
+
+void enqueue(int queue[], int x, int n) {
+    if (rear == n - 1) {
+        printf("Queue is full. Overflow!\n");
+    } else {
+        if (front == -1) front = 0;
+        rear++;
+        queue[rear] = x;
+    }
+}
+
+void dequeue() {
+    if (front == -1 || front > rear) {
+        printf("Queue is empty. Underflow!\n");
+    } else {
+        front++;
+    }
+}
+
+int isEmpty() {
+    return front == -1 || front > rear;
+}
+
+int frontElement(int queue[]) {
+    return queue[front];
+}
+
+int size() {
+    if (isEmpty()) return 0;
+    return rear - front + 1;
+}
+
+int main() {
+    enqueue(queue, 10, SIZE);
+    enqueue(queue, 20, SIZE);
+    enqueue(queue, 30, SIZE);
+    printf("Front element: %d\n", frontElement(queue));
+    printf("Queue size: %d\n", size());
+
+    dequeue();
+    printf("After one dequeue, front element: %d\n", frontElement(queue));
+    printf("Queue size: %d\n", size());
+
+    dequeue();
+    dequeue();
+    dequeue(); // Underflow
+
+    return 0;
+}
+```
