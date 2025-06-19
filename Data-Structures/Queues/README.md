@@ -136,3 +136,16 @@ int main() {
     return 0;
 }
 ```
+
+
+## 4. Output
+```
+Front element: 10  
+Queue size: 3  
+After one dequeue, front element: 20  
+Queue size: 2  
+Queue is empty. Underflow!
+```
+
+## 5. কিউ-এর অ্যাপ্লিকেশন — অর্ডার প্রসেসিং
+ধরা যাক, একটি রেস্টুরেন্টে কাস্টমাররা অর্ডার দেয় এবং সেগুলো কিচেনে একটি কিউ হিসেবে জমা হয়। যেই অর্ডারটি আগে এসেছে, সেটিই আগে রান্না করা হয়।
