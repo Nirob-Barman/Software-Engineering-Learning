@@ -38,3 +38,41 @@ int main() {
     return 0;
 }
 ```
+
+## Binary Search
+```
+int binarySearch(int arr[], int size, int target) {
+    int left = 0;
+    int right = size - 1;
+
+    while (left <= right) {
+        int mid = left + (right - left) / 2;  // Prevent overflow
+
+        if (arr[mid] == target) {
+            return mid;  // Target found
+        } else if (arr[mid] < target) {
+            left = mid + 1;  // Search right half
+        } else {
+            right = mid - 1; // Search left half
+        }
+    }
+
+    return -1;  // Target not found
+}
+
+int main() {
+    int numbers[] = {1, 3, 5, 7, 9, 11};
+    int size = sizeof(numbers) / sizeof(numbers[0]);
+    int target = 7;
+
+    int result = binarySearch(numbers, size, target);
+
+    if (result != -1) {
+        printf("Element %d found at index %d.\n", target, result);
+    } else {
+        printf("Element %d not found in the array.\n", target);
+    }
+
+    return 0;
+}
+```
