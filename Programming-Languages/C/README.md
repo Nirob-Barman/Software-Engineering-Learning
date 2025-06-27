@@ -108,3 +108,41 @@ int main() {
     return 0;
 }
 ```
+
+## Selection Sort
+```
+void selectionSort(int arr[], int size) {
+    for (int i = 0; i < size - 1; i++) {
+        int minIndex = i;
+
+        // Find the minimum element in the unsorted part
+        for (int j = i + 1; j < size; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+
+        // Swap the found minimum with the first unsorted element
+        if (minIndex != i) {
+            int temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
+    }
+}
+
+int main() {
+    int numbers[] = {29, 10, 14, 37, 13};
+    int size = sizeof(numbers) / sizeof(numbers[0]);
+
+    selectionSort(numbers, size);
+
+    printf("Sorted array: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", numbers[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
