@@ -146,6 +146,32 @@ Honda Civic car is starting.
 Car Name: Honda, Model: Civic
 ```
 
+## ক্লাস ও অবজেক্ট বিষয়ক প্রোগ্রামের উদাহরণসমূহ
+
+1. [A C++ program to introduce class of objects](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-5-Classes-and-Objects/001-a-c%2B%2B-program-to-introduce-class-of-objects.cpp)
+
+2. Another C++ program to introduce class of objects
+
+3. A C++ program to introduce nesting of member function
+
+4. A C++ program to introduce arrays within a class
+
+5. A C++ program to introduce static data member
+
+6. A C++ program to introduce static data member and member function
+
+7. A sample C++ program to introduce arrays of objects
+
+8. A sample C++ program to introduce objects as function arguments
+
+9. A sample C++ program to introduce returning objects
+
+10. A sample C++ program to introduce friend function
+
+11. A sample C++ program to demonstrate how friend functions work as bridge between the classes
+
+12. A sample C++ program that shows how to use common friend function to exchange the private values of two classes
+
 ## উপসংহার
 
 **ক্লাস এবং অবজেক্টের ধারণা OOP-এর মূল ভিত্তি।** ক্লাস আমাদের একটি **টেমপ্লেট** দেয়, যার মাধ্যমে আমরা **একাধিক অবজেক্ট তৈরি** করতে পারি। এর ফলে **কোড পুনরায় ব্যবহারযোগ্য হয়** এবং **প্রোগ্রামিং আরও সংগঠিত ও সহজ** হয়ে ওঠে।  
