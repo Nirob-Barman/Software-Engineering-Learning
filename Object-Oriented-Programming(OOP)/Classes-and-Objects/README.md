@@ -154,7 +154,7 @@ Car Name: Honda, Model: Civic
 
 3. [A C++ program to introduce nesting of member function](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-5-Classes-and-Objects/003-a-c%2B%2B-program-to-introduce-nesting-of-member-function.cpp)
 
-4. A C++ program to introduce arrays within a class
+4. [A C++ program to introduce arrays within a class](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-5-Classes-and-Objects/004-a-c%2B%2B-program-to-introduce-arrays-within-a-class.cpp)
 
 5. A C++ program to introduce static data member
 
