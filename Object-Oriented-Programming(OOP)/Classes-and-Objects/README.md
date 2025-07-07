@@ -160,7 +160,7 @@ Car Name: Honda, Model: Civic
 
 6. [A C++ program to introduce static data member and member function](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-5-Classes-and-Objects/006-a-c%2B%2B-program-to-introduce-static-data-member-and-member-function.cpp)
 
-7. A sample C++ program to introduce arrays of objects
+7. [A sample C++ program to introduce arrays of objects](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-5-Classes-and-Objects/007-a-sample-program-to-introduce-arrays-of-objets.cpp)
 
 8. A sample C++ program to introduce objects as function arguments
 
