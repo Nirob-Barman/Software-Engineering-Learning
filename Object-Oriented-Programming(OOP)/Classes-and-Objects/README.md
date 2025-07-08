@@ -162,7 +162,7 @@ Car Name: Honda, Model: Civic
 
 7. [A sample C++ program to introduce arrays of objects](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-5-Classes-and-Objects/007-a-sample-program-to-introduce-arrays-of-objets.cpp)
 
-8. A sample C++ program to introduce objects as function arguments
+8. [A sample C++ program to introduce objects as function arguments](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-5-Classes-and-Objects/008-a-sample-program-to-introduce-objects-as-function-arguments.cpp)
 
 9. A sample C++ program to introduce returning objects
 
