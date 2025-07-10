@@ -166,7 +166,7 @@ Car Name: Honda, Model: Civic
 
 9. [A sample C++ program to introduce returning objects](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-5-Classes-and-Objects/009-a-sample-program-to-introduce-returning-objects.cpp)
 
-10. A sample C++ program to introduce friend function
+10. [A sample C++ program to introduce friend function](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-5-Classes-and-Objects/010-a-sample-program-to-introduce-friend-function.cpp)
 
 11. A sample C++ program to demonstrate how friend functions work as bridge between the classes
 
