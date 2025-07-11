@@ -168,7 +168,7 @@ Car Name: Honda, Model: Civic
 
 10. [A sample C++ program to introduce friend function](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-5-Classes-and-Objects/010-a-sample-program-to-introduce-friend-function.cpp)
 
-11. A sample C++ program to demonstrate how friend functions work as bridge between the classes
+11. [A sample C++ program to demonstrate how friend functions work as bridge between the classes](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-5-Classes-and-Objects/011-a-sample-program-to-demonstrate-how-friend-functions-works-as-bridge-between-the-classes.cpp)
 
 12. A sample C++ program that shows how to use common friend function to exchange the private values of two classes
 
