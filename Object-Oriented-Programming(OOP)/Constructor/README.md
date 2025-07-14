@@ -72,7 +72,7 @@ Name: Nirob, Age: 06
 
 ## Constructor বিষয়ক প্রোগ্রামের উদাহরণসমূহ
 
-1. a sample program to introduce parameterized constructor
+1. [a sample program to introduce parameterized constructor](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-6-Constructor-and-Destructor-Functions/001-a-sample-program-to-introduce-parameterized-constructor.cpp)
 2. a sample program to introduce multiple constructors in a class
 3. a sample program to introduce constructors with default arguments
 4. a sample program to introduce dynamic initialization of objects
