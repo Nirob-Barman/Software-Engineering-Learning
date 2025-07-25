@@ -75,7 +75,7 @@ Name: Nirob, Age: 06
 1. [a sample program to introduce parameterized constructor](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-6-Constructor-and-Destructor-Functions/001-a-sample-program-to-introduce-parameterized-constructor.cpp)
 2. [a sample program to introduce multiple constructors in a class](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-6-Constructor-and-Destructor-Functions/002-a-sample-program-to-introduce-multiple-constructors-in-a-class.cpp)
 3. [a sample program to introduce constructors with default arguments](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-6-Constructor-and-Destructor-Functions/003-a-sample-program-to-introduce-constructors-with-default-arguments.cpp)
-4. a sample program to introduce dynamic initialization of objects
+4. [a sample program to introduce dynamic initialization of objects](https://github.com/Nirob-Barman/Object-Oriented-Programming/blob/main/Chapter-6-Constructor-and-Destructor-Functions/004-a-sample-program-to-introduce-dynamic-initialization-of-objects.cpp)
 5. a sample program to introduce copy constructor
 6. a sample program to introduce in what sequence the constructor and destructor functions are called when you create more than one object
 
